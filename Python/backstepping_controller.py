@@ -1,13 +1,4 @@
 [backstepping_controller.py](https://github.com/user-attachments/files/24137760/backstepping_controller.py)
-#!/usr/bin/env python3
-"""
-Backstepping 6-DOF controller para BlueROV2 (corregido para ROS2 Jazzy)
-
-- Suscribe odometría (ajusta `odom_topic` si tu simulador publica en otro topic)
-- Implementa controlador backstepping 6DOF, mapea tau -> thrusters con B_pinv
-- Logging CSV y plot al detener con Ctrl+C
-- Corregido: no usa info_once() (incompatible con rclpy en Jazzy)
-"""
 
 import rclpy
 from rclpy.node import Node
